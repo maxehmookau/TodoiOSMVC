@@ -10,9 +10,9 @@
 
 #import <CoreData/CoreData.h>
 
-@interface TDMasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+@interface TDMasterViewController : UITableViewController <NSFetchedResultsControllerDelegate, UIAlertViewDelegate>
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-
+@property (strong, nonatomic) UIAlertView *alertView;
 @end
